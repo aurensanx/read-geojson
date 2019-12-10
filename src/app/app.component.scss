@@ -1,0 +1,48 @@
+//:host {
+//  height: 80%;
+//  width: 80%;
+//  display: flex;
+//  justify-content: center;
+//}
+
+:host {
+  height: 100%;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: lighten(black, 20%);
+
+  p {
+    padding: 0.5rem;
+
+    &:first-child {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+}
+
+div {
+  height: 92%;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 16%;
+  }
+  div {
+    height: 84%;
+  }
+}
+
+.leaflet-container {
+  padding: 0;
+  margin: 0;
+  background-color: darken(darkblue, 20%);
+}
