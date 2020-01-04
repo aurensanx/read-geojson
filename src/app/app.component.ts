@@ -40,7 +40,9 @@ export class AppComponent implements OnInit {
     zoom: 3,
     minZoom: 2,
     attributionControl: false,
-    center: L.latLng(47.482019, -1),
+    center: L.latLng(41.65606, -0.87734),
+    maxBounds:  new L.LatLngBounds(new L.LatLng(-90, 225), new L.LatLng(90, -225)),
+    maxBoundsViscosity: 1,
     // wrap: true,
   };
 
